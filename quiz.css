@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+#start-button {
+    margin-top: 20px; /* Slight space between the heading and the button */
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Container for the quiz content */
+.container {
+    margin-top: 80px; /* Adjust this value based on the height of your navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Subtract the height of the fixed navbar */
+}
+
+/* Container for quiz content */
+.quiz-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Adjusted for better responsiveness */
+}
+
+/* Styling for the question box */
+.Question {
+    margin-bottom: 20px;
+}
+
+/* Styling for answer buttons */
+#answer-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* Styling for individual answer buttons */
+#answer-buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 16px; /* Ensure text is readable */
+}
+
+/* Button hover effect */
+#answer-buttons button:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+/* Button selected effect */
+#answer-buttons button.selected {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+/* Controls section styling */
+#controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Progress bar styling */
+#progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e9ecef;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0; /* Initialize width */
+    transition: width 0.3s;
+}
+
+/* Score container styling */
+#score-container {
+    text-align: center;
+    margin-top: 20px;
+}
